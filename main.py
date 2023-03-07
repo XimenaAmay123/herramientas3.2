@@ -6,7 +6,7 @@ import streamlit as st
 import plotly.express as px
 import pandas as pd
 import plotly.figure_factory as ff
-import AccessAPI as servicio
+
 import pickle
 with st.sidebar:
     st.write("Este es una barra lateral")
@@ -34,10 +34,6 @@ st.write("Elegiste", valor)
 datosFiltrados= datoPais[datoPais["year"] == valor]
 st.dataframe(datosFiltrados)
 
-if st.button('llamar servicio'):
-    result = servicio.llamarservicio()
-    st.write ('resultado = ', result)
-def print_hi(name):
 
     # Use a breakpoint in the code line below to debug your script.
     st.header("Hola desde streamlit!")
