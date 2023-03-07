@@ -1,0 +1,3 @@
+Streamlit==1.8.0
+plotly
+pandas
