@@ -7,7 +7,7 @@ import plotly.express as px
 import pandas as pd
 import plotly.figure_factory as ff
 import AccessAPI as servicio
-
+import pickle
 with st.sidebar:
     st.write("Este es una barra lateral")
 
